@@ -1,3 +1,4 @@
+#define PY_SSIZE_T_CLEAN
 #include "Transcribe.h"
 //#include <Python.h>                       
 #include <Windows.h> 
@@ -7,6 +8,7 @@
 namespace NoteTaker {
 	Transcribe::Transcribe(std::string link)
 	{
+
         ////All this code to download a YouTube Video and get the title back to our class 
         //Py_Initialize();
         //PyRun_SimpleString("from pytube import YouTube\n");
@@ -30,6 +32,9 @@ namespace NoteTaker {
 
         //// Clean up and exit
         //Py_Finalize();
+
+
+
  //       
  //       vidPath = "yt/audio.wav";
  //       
